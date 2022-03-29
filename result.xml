@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="6" skipped="0" tests="15" time="0.114" timestamp="2022-03-29T17:01:56.337796" hostname="LAPTOP-OUP6L2R5"><testcase classname="test_calculator" name="test_Add[3-2-5]" time="0.001" /><testcase classname="test_calculator" name="test_Add[10-12-15]" time="0.001"><failure message="assert 15 == 22">a = 10, b = 12, c = 15
+
+    @pytest.mark.x
+    @pytest.mark.parametrize("a,b,c",[(3,2,5),(10,12,15),(2,5,8),(7,8,15)])
+    def test_Add(a,b,c):
+    
+        result= Calculator.addition(a,b)
+&gt;       assert c ==result
+E       assert 15 == 22
+
+test_calculator.py:9: AssertionError</failure></testcase><testcase classname="test_calculator" name="test_Add[2-5-8]" time="0.001"><failure message="assert 8 == 7">a = 2, b = 5, c = 8
+
+    @pytest.mark.x
+    @pytest.mark.parametrize("a,b,c",[(3,2,5),(10,12,15),(2,5,8),(7,8,15)])
+    def test_Add(a,b,c):
+    
+        result= Calculator.addition(a,b)
+&gt;       assert c ==result
+E       assert 8 == 7
+
+test_calculator.py:9: AssertionError</failure></testcase><testcase classname="test_calculator" name="test_Add[7-8-15]" time="0.001" /><testcase classname="test_calculator" name="test_sub[5-2-3]" time="0.001" /><testcase classname="test_calculator" name="test_sub[15-10-5]" time="0.001" /><testcase classname="test_calculator" name="test_sub[25-14-15]" time="0.001"><failure message="assert 15 == 11">a = 25, b = 14, c = 15
+
+    @pytest.mark.parametrize("a,b,c",[(5,2,3),(15,10,5),(25,14,15)])
+    def test_sub(a,b,c):
+        result = Calculator.substraction(a,b)
+&gt;       assert c==result
+E       assert 15 == 11
+
+test_calculator.py:14: AssertionError</failure></testcase><testcase classname="test_calculator" name="test_multi[2-3-6]" time="0.001" /><testcase classname="test_calculator" name="test_multi[3-5-15]" time="0.001" /><testcase classname="test_calculator" name="test_multi[7-2-15]" time="0.001"><failure message="assert 15 == 14">a = 7, b = 2, c = 15
+
+    @pytest.mark.parametrize("a,b,c",[(2,3,6),(3,5,15),(7,2,15),(7,5,15)])
+    def test_multi(a,b,c):
+        result = Calculator.multiply(a,b)
+&gt;       assert c == result
+E       assert 15 == 14
+
+test_calculator.py:19: AssertionError</failure></testcase><testcase classname="test_calculator" name="test_multi[7-5-15]" time="0.001"><failure message="assert 15 == 35">a = 7, b = 5, c = 15
+
+    @pytest.mark.parametrize("a,b,c",[(2,3,6),(3,5,15),(7,2,15),(7,5,15)])
+    def test_multi(a,b,c):
+        result = Calculator.multiply(a,b)
+&gt;       assert c == result
+E       assert 15 == 35
+
+test_calculator.py:19: AssertionError</failure></testcase><testcase classname="test_calculator" name="test_div[20-10-2]" time="0.001" /><testcase classname="test_calculator" name="test_div[15-3-5]" time="0.001" /><testcase classname="test_calculator" name="test_div[20-5-4]" time="0.001" /><testcase classname="test_calculator" name="test_div[7-5-15]" time="0.001"><failure message="assert 15 == 1.4">a = 7, b = 5, c = 15
+
+    @pytest.mark.parametrize("a,b,c",[(20,10,2),(15,3,5),(20,5,4),(7,5,15)])
+    def test_div(a,b,c):
+    
+        result = Calculator.divide(a,b)
+&gt;       assert c== result
+E       assert 15 == 1.4
+
+test_calculator.py:24: AssertionError</failure></testcase></testsuite></testsuites>
